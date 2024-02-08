@@ -1,13 +1,16 @@
 function RentbookReader({ rents }) {
+    if (rents.lengt === 0) {
+        return (<div>Ei näytettäviä vuokria</div>);
+    }
     return (
         <div>
-            {rents.map(obj => {
+            {rents.map(rent => {
                 return (
                     <div>
-                        <p>
-                            Nimi: {obj.nimi}<br />
-                            Alkaa: {obj.alkupaiva}<br />
-                            Päättyy: {obj.loppupaiva}<br />
+                        <p key={rent.id}>
+                            Nimi: {rent.nimi}<br />
+                            Alkaa: {rent.alkupaiva}<br />
+                            Päättyy: {rent.loppupaiva}<br />
                         </p>
                     </div>
                 );
@@ -17,4 +20,4 @@ function RentbookReader({ rents }) {
     );
 }
 
-export default RentbookReader  
+export default RentbookReader;
