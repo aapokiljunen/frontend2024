@@ -60,7 +60,7 @@ function NewRating({ ratings, setRatings, info, setInfo }) {
                     name='review'
                     value={rating.review}
                     onChange={(e) => handleChange(e)}
-                    style={{width: 477, marginBottom: 5}}
+                    style={{ width: 477, marginBottom: 5 }}
                 /><br />
                 <input type='button' value='Lisää arvostelu' onClick={addRating} />
                 <p style={{ color: 'red' }}>{info}</p>

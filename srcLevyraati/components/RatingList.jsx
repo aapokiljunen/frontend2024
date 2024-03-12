@@ -28,9 +28,9 @@ function RatingList() {
 
     return (
         <div>
-            <NewRating ratings={ratings} setRatings={setRatings} info={info} setInfo={setInfo}/>
+            <NewRating ratings={ratings} setRatings={setRatings} info={info} setInfo={setInfo} />
 
-            <RatingListReader ratings={ratings} info={info} setInfo={setInfo}/>
+            <RatingListReader ratings={ratings} info={info} setInfo={setInfo} />
         </div>
     )
 };
